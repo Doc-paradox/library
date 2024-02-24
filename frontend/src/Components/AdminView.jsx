@@ -23,7 +23,7 @@ const AdminView = () => {
 
   const handleAddBook = async () => {
     try {
-      const response = await axios.post('https://library-vm5i.onrender.com/books', newBook);
+      const response = await axios.post('http://localhost:5001/books', newBook);
       console.log('Book added successfully:', response.data);
       setNewBook({
         name: '',
